@@ -1,0 +1,177 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Scent.CO.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Scent.CO</title>
+    <link href="css/StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container">
+            <header>
+                <nav>
+                    <div class="header_logo">
+                        <img src="Image/scentco.png" alt="Scent.CO" class="logo" />
+                    </div>
+                    <div class="right">
+                        <ul class="main-navigation__items">
+                            <li class="main-navigation__item">
+                                <a href="home.aspx">Home</a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="products.aspx">Products</a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="cart.aspx">Cart</a>
+                            </li>
+                            <li class="btn-login">
+                                <a href="login.aspx" runat="server" id="LoginButton">Login</a>
+                                <asp:Label ID="WelcomeText" runat="server" Text="Welcome, anonymous"></asp:Label>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div class="footer">
+                <div class="footer-details">
+                    <div class="footer-role">
+                        <div class="footer-role-spt">
+                            <table>
+                                <tr>
+                                    <th colspan="2">
+                                        Song Peitze
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>Roles: </td>
+                                    <td class="table-data">Frontend Developer</td>
+                                </tr>
+                                <tr>
+                                    <td>Student ID: </td>
+                                    <td class="table-data">SWE2004163</td>
+                                </tr>
+                                <tr>
+                                    <td>Email: </td>
+                                    <td class="table-data"><a href="mailto:SWE2004163@xmu.edu.my">SWE2004163@xmu.edu.my</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="footer-role-tyw">
+                            <table>
+                                <tr>
+                                    <th colspan="2">
+                                        Tee Yi Wen
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>Roles: </td>
+                                    <td class="table-data">Frontend Developer</td>
+                                </tr>
+                                <tr>
+                                    <td>Student ID: </td>
+                                    <td class="table-data">SWE2004164</td>
+                                </tr>
+                                <tr>
+                                    <td>Email: </td>
+                                    <td class="table-data"><a href="mailto:SWE2004164@xmu.edu.my">SWE2004164@xmu.edu.my</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="footer-role">
+                        <div class="footer-role-oyj">
+                            <table>
+                                <tr>
+                                    <th colspan="2">
+                                        Ong Yi Jun
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>Roles: </td>
+                                    <td class="table-data">Full Stack Developer & Integrator</td>
+                                </tr>
+                                <tr>
+                                    <td>Student ID: </td>
+                                    <td class="table-data">SWE2002109</td>
+                                </tr>
+                                <tr>
+                                    <td>Email: </td>
+                                    <td class="table-data"><a href="mailto:SWE2002109@xmu.edu.my">SWE2002109@xmu.edu.my</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="footer-role">
+                        <div class="footer-role-lzy">
+                            <table>
+                                <tr>
+                                    <th colspan="2">
+                                        Liew Zhenyang
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>Roles: </td>
+                                    <td class="table-data">Backend Developer</td>
+                                </tr>
+                                <tr>
+                                    <td>Student ID: </td>
+                                    <td class="table-data">SWE2002106</td>
+                                </tr>
+                                <tr>
+                                    <td>Email: </td>
+                                    <td class="table-data"><a href="mailto:SWE2002106@xmu.edu.my">SWE2002106@xmu.edu.my</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="footer-role-kxl">
+                            <table>
+                                <tr>
+                                    <th colspan="2">
+                                        Kong Xuan Lin
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>Roles: </td>
+                                    <td class="table-data">Backend Developer</td>
+                                </tr>
+                                <tr>
+                                    <td>Student ID: </td>
+                                    <td class="table-data">SWE2004159</td>
+                                </tr>
+                                <tr>
+                                    <td>Email: </td>
+                                    <td class="table-data"><a href="mailto:SWE2004159@xmu.edu.my">SWE2004159@xmu.edu.my</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-address">
+                    Xiamen University Malaysia, <br />
+                    Jalan Sunsuria, <br />
+                    Bandar Sunsuria, <br />
+                    43900 Sepang, <br />
+                    Selangor Darul Ehsan, <br />
+                    Malaysia
+                </div>
+            <asp:Label ID="Label1" runat="server" Text="Copyright @Scent.CO 2022 | scentco@gmail.com" BackColor="Black" Font-Names="Centaur" ForeColor="White" Height="50" Font-Bold="True"></asp:Label>
+            </div>
+
+            <asp:ContentPlaceHolder ID="JavaScript" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

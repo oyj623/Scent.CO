@@ -1,0 +1,126 @@
+﻿body {
+}
+
+.navbrand {
+    background-color: #00000033;
+    padding-top: 1px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.navbrand-items {
+    margin-bottom: 0px;
+}
+.navbrand-item {
+    display: inline-flex;
+    vertical-align: super;
+    padding-left:50px;
+}
+
+.navbrand-item a {
+    font-size: 18px;
+    font-family: Centaur;
+    font-weight: bold;
+    text-decoration: none;
+    color: #293b5b;
+    cursor: pointer;
+    margin-right: 80px;
+    display: inline-block;
+    position: relative;
+}
+
+.navbrand-item a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+.navbrand-item a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #22182e91;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.slogan {
+    position: relative;
+    border: 2px solid floralwhite;
+    width: 95%;
+    height: 93%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: aliceblue;
+    font-size: x-large;
+    display: grid;
+    font-family: 'Harlow Solid';
+}
+
+.home-perfume {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+}
+
+.home-perfume-video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+video {
+    min-width: 100%;
+}
+
+.home-perfume-content {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    color: floralwhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-perfume-title {
+    z-index: 2;
+    transform: translateY(-65px);
+}
+.home-perfume-description {
+    z-index: 1;
+    background: rgba(128, 128, 128, 0.5);
+}
+.home-perfume-button {
+    transform: translateY(65px);
+    z-index: 2;
+
+}
+
+.brand {
+    color: floralwhite;
+    font-size: 62px;
+    font-weight: bolder;    
+}
+
+.btn1 {
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.btn1:hover {
+    box-shadow: 0 15px 17px 0 rgba(0,0,0,0.17),
+                0 6px 8px 0 rgba(0,0,0,0.18);
+}
+
+
+
+
