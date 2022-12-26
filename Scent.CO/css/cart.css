@@ -8,7 +8,7 @@ body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-image: url('../image/bgcart.jpg');
+    background-image: url('../Image/cartBG.jpg');
     background-repeat: no-repeat;
 }
 
@@ -164,6 +164,7 @@ hr {
     width: 90%;
     float: right;
     margin-right: 5%;
+    margin-bottom: 80px;
 }
 
 .checkout {

@@ -172,6 +172,7 @@ namespace Scent.CO
                 productIndices.Clear();
             }
             cartProducts.Clear();
+            Session["PurchaseSuccessful"] = "PurchaseSuccessful";
             Response.Redirect("home.aspx");
         }
         private int CreateTransaction()

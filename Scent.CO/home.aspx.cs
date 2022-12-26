@@ -11,7 +11,12 @@ namespace Scent.CO
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["PurchaseSuccessful"] != null)
+            {
+                Response.Write(@"<script>
+                    alert('Purchase Successful');
+                </script>");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)

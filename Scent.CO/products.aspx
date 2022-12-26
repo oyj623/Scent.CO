@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="searchbox">
         <asp:TextBox ID="filterInput" runat="server" CssClass="search" ForeColor="Black" onKeyPress="javascript:filterProduct();"></asp:TextBox>
-        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Image/searchbtn.png" OnClientClick="filterProduct(); return false;" CssClass="search-icon"/>
+        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Image/searchButton.png" OnClientClick="filterProduct(); return false;" CssClass="search-icon"/>
     </div>
     <div class="product-list">
         <asp:Repeater ID="ProductList" runat="server">

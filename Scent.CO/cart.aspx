@@ -9,7 +9,7 @@
         <ItemTemplate>
             <div class="item">
                 <div>
-                    <asp:ImageButton ID="DeleteItemFromCart" runat="server" CommandName="DeleteItem" CommandArgument='<%# Eval("Name") %>' CssClass="btn-del" ImageUrl="~/Image/delete.png"/>
+                    <asp:ImageButton ID="DeleteItemFromCart" runat="server" CommandName="DeleteItem" CommandArgument='<%# Eval("Name") %>' CssClass="btn-del" ImageUrl="~/Image/deleteButton.png"/>
                 </div>
  
                 <div class="image">
@@ -35,10 +35,6 @@
             </div>
         </ItemTemplate>
     </asp:Repeater>
-</div>
-
-<hr /> 
-
     <div class="checkout">
         <div class="total">
             <div>
@@ -48,6 +44,11 @@
             <div class="total-amount" id="totalAmount">RM0</div>
         </div>
     </div>
+</div>
+
+<hr /> 
+
+    
 
     <div class="add-box">
         <asp:Label ID="Label5" runat="server" Text="Choose Address" CssClass="topics"></asp:Label>
